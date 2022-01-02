@@ -13,6 +13,15 @@ buildscript {
     }
 }
 
+allprojects {
+    repositories {
+        // グラフ描写
+        // https://qiita.com/c60evaporator/items/14e63d22d860b73e6f22
+        // 下の文はsettings.gradleに移動
+        //maven { url 'https://jitpack.io' }
+    }
+}
+
 task clean(type: Delete) {
     delete rootProject.buildDir
 }
